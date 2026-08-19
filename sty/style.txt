@@ -1,0 +1,65 @@
+; ------------------------------------------------------------
+;  style.txt  サンプル（sty フォルダに style.txt として置く）
+;
+;  ・行頭が ; または # の行と空行は無視される
+;  ・[ ] の行は見出し。以降の名前がどのテーブルのものかを示す
+;    見出し名は tblsearch のテーブル名をそのまま書く
+;      [style]    文字スタイル
+;      [dimstyle] 寸法スタイル
+;      [layer]    画層
+;      [ltype]    線種
+;      [block]    ブロック
+;  ・見出しが無いまま名前を書いた場合は [style] とみなす
+;  ・[file] は取り込み元の dwg 名（省略時は style.dwg）
+;  ・日本語が文字化けする環境では \uXXXX 表記が使える
+;      \u914d\u7b4b\u52a0\u5de5\u56f3 → 配筋加工図
+; ------------------------------------------------------------
+
+[file]
+style.dwg
+
+[style]
+3dhaikinx-textstyle-button
+3dhaikinx-textstyle-3D
+
+[dimstyle]
+XTH-2D-Drawing
+XTH-2D-Drawing-d
+XTH-2D-Drawing-h
+XTH-Alignment
+XTH-Center-Arc
+XTH-Center-Arc-s
+XTH-Center-End
+XTH-Center-Hook-End
+XTH-Center-Hook-End-s
+XTH-Center-Hook-Start
+XTH-Center-Hook-Start-s
+XTH-Center-Line
+XTH-Center-Line-s
+XTH-Center-Start
+XTH-DBOX-a
+XTH-DBOX-p
+XTH-DBOX-r
+XTH-DBOX-s
+XTH-DTEXT
+XTH-Parameter-Arc
+XTH-Parameter-Arc-s
+XTH-Parameter-Eccentricity
+XTH-Parameter-End
+XTH-Parameter-Joint
+XTH-Parameter-Line
+XTH-Parameter-Ofs
+XTH-Parameter-Ofs-s
+XTH-Parameter-Rota-s
+XTH-Parameter-Sft
+XTH-Parameter-Sft-s
+XTH-Parameter-Thick
+XTH-Parameter-Width
+XTH-Rebar-Name
+XTH-Rebar-Name-s
+配筋加工図
+配筋図寸法
+
+; 日本語が化ける場合は上の2行を消して、代わりに次を使う
+; \u914d\u7b4b\u52a0\u5de5\u56f3
+; \u914d\u7b4b\u56f3\u5bf8\u6cd5
